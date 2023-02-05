@@ -30,7 +30,7 @@ public class CashbackHackServiceTest {
     @Test
     public void LimitBonus() {
         int amount = 1_000;
-        int expected = 1000;
+        int expected = 0;
 
         CashbackHackService service = new CashbackHackService();
 
