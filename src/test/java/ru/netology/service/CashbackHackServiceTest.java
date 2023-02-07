@@ -14,9 +14,10 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
 
         int actual = service.remain(amount);
-        assertEquals(actual,expected);
+        assertEquals(actual, expected);
 
     }
+
     @Test
     public void notUpTheBonus() {
         int amount = 100;
@@ -25,8 +26,9 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
 
         int actual = service.remain(amount);
-        assertEquals(actual,expected);
+        assertEquals(actual, expected);
     }
+
     @Test
     public void LimitBonus() {
         int amount = 1_000;
@@ -35,8 +37,9 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
 
         int actual = service.remain(amount);
-        assertEquals(actual,expected);
+        assertEquals(actual, expected);
     }
+
     @Test
     public void notUpBonus() {
         int amount = 500;
@@ -45,6 +48,6 @@ public class CashbackHackServiceTest {
         CashbackHackService service = new CashbackHackService();
 
         int actual = service.remain(amount);
-        assertEquals(actual,expected);
+        assertEquals(actual, expected);
     }
 }
